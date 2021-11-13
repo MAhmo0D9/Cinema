@@ -1,0 +1,83 @@
+[
+  {
+    "name": "ReserveSystem",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Show exhibition details by date and hour",
+      "Accept resevasion",
+      "Cancel reserve",
+      "Inform cancelled show to reserved customers",
+      "New show",
+      "Find reserved seat no.",
+      ""
+    ],
+    "collaborators": [
+      "show",
+      ""
+    ]
+  },
+  {
+    "name": "Show",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "able to reserve",
+      "able to save saloon"
+    ],
+    "collaborators": [
+      "Theater",
+      "Row Seat"
+    ]
+  },
+  {
+    "name": "Theater",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Accept reserve request",
+      "Save row",
+      ""
+    ],
+    "collaborators": [
+      "Row",
+      "Collection"
+    ]
+  },
+  {
+    "name": "Row",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Reserve set of seats",
+      "Seat reserve",
+      "Find seat no.?",
+      "",
+      ""
+    ],
+    "collaborators": [
+      "seat"
+    ]
+  },
+  {
+    "name": "Seat",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Receive reserve",
+      "Keep reserve",
+      "Add a reserve to next to reserved seat",
+      "empty seats",
+      "",
+      ""
+    ],
+    "collaborators": [
+      ""
+    ]
+  }
+]
